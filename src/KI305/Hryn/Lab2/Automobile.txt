@@ -1,0 +1,9 @@
+We started the car engine.
+We turned on the brakes.
+We turned to the left.
+We turned to the right.
+We checked the condition of the engine.
+We turned on the headlights.
+We checked the level of the fuel tank in the car.
+We locked the doors.
+We stopped the car engine.
