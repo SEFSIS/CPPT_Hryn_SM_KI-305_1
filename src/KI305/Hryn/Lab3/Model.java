@@ -1,4 +1,4 @@
-package KI305.Hryn.Lab2;
+package KI305.Hryn.Lab3;
 
 /**
  * Клас, що представляє модель автомобіля.

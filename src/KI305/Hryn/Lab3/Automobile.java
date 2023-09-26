@@ -1,4 +1,4 @@
-package KI305.Hryn.Lab2;
+package KI305.Hryn.Lab3;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 /**
  * Клас, що представляє автомобіль та зберігає інформацію про нього.
  */
-public class Automobile {
+public abstract class Automobile {
     //Поля класу
     private Company company;
     private Model model;
@@ -22,7 +22,7 @@ public class Automobile {
     //Пустий конструктор без аргументів
     public Automobile() {
         try {
-            logWriter = new PrintWriter(new FileWriter("C:\\Users\\User\\IdeaProjects\\java_lab\\src\\KI305\\Hryn\\Lab2\\Automobile.txt"));
+            logWriter = new PrintWriter(new FileWriter("C:\\Users\\User\\IdeaProjects\\java_lab\\src\\KI305\\Hryn\\Lab3\\Automobile.txt"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -34,11 +34,15 @@ public class Automobile {
         this.model = model;
         this.price = price;
         try {
-            logWriter = new PrintWriter(new FileWriter("C:\\Users\\User\\IdeaProjects\\java_lab\\src\\KI305\\Hryn\\Lab2\\Automobile.txt"));
+            logWriter = new PrintWriter(new FileWriter("C:\\Users\\User\\IdeaProjects\\java_lab\\src\\KI305\\Hryn\\Lab3\\Automobile.txt"));
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
+    //Абстрактні методи класу
+    public abstract void moveObject();
+    public abstract void stopObject();
 
     //Гетери і сетери для об'єктів класу
     public Company getCompany() {
@@ -134,7 +138,8 @@ public class Automobile {
     //Метод toString()
     @Override
     public String toString() {
-        return "Automobile: Company - " + company + ", Model - " + model + ", Price - " + price;
+        return "Automobile: Company : " + company + ", Model : " + model + ", Price : " + price;
     }
+
 
 }
