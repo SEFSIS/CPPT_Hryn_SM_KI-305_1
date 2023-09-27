@@ -3,6 +3,9 @@ package KI305.Hryn.Lab4;
 import java.io.*;
 import java.util.Scanner;
 
+/**
+ * The CalcWFio class provides methods for performing calculations and file I/O operations.
+ */
 class CalcWFio {
     private double result; // Додали поле для результату
 
