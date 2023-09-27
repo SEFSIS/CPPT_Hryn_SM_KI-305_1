@@ -1,4 +1,4 @@
-package KI305.Hryn.Lab4;
+package KI305.Hryn.Lab5;
 
 /**
  * The CalcException class is a custom exception class that extends ArithmeticException.
