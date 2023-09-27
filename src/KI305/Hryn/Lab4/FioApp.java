@@ -1,5 +1,4 @@
 package KI305.Hryn.Lab4;
-
 import java.io.*;
 import java.util.*;
 public class FioApp {
@@ -13,7 +12,7 @@ public class FioApp {
         Scanner s = new Scanner(System.in);
         System.out.print("Enter data: ");
         double data = s.nextDouble();
-        obj.calculate(data);
+        obj.calculate((int) data);
         System.out.println("Result is: " + obj.getResult());
         obj.writeResTxt("textRes.txt");
         obj.writeResBin("BinRes.bin");
